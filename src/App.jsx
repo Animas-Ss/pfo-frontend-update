@@ -51,7 +51,7 @@ function App() {
       </header>
       <div className="main">
         <a className="item" href="https://animas-ss.github.io/Dolce_Vita_Noelia_AG" target="_blank" rel="noopener noreferrer">
-          <img src="/Google.png" alt="Antigravity Logo" className="logos antigravity-logo" />
+          <img src={`${import.meta.env.BASE_URL}Google.png`} alt="Antigravity Logo" className="logos antigravity-logo" />
         </a>
         <div className="item" onClick={handleTogglePrompt}>
           <img src={openaiLogo} alt="OpenAI Logo" className="logos openai-logo" />
