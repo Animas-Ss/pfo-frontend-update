@@ -4,7 +4,7 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/pfo_fronted_update/',
+  base: '/pfo-frontend-update/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
