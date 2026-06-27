@@ -217,23 +217,52 @@
   flex: 1 1 300px;
   max-width: 120px;
   height: 120px;
-  background: linear-gradient(135deg, rgba(16, 15, 15, 0.1), rgba(37, 37, 37, 0.3));
+  background: linear-gradient(135deg, rgba(16, 15, 15, 0.15), rgba(37, 37, 37, 0.3));
   border-radius: 50%;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .logos {
   background: transparent;
-  opacity: 0.5;
+  opacity: 0.55;
   width: 40px;
   height: 40px;
   object-fit: contain;
   display: block;
   margin: auto;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Efectos de Hover Generales */
+.item:hover {
+  transform: translateY(-10px) scale(1.12);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.45));
+}
+
+.item:hover .logos {
+  opacity: 1;
+  transform: scale(1.18);
+}
+
+/* Efectos de Hover con colores temáticos de cada Agente */
+.item-antigravity:hover {
+  border-color: #4285F4;
+  box-shadow: 0 16px 36px rgba(66, 133, 244, 0.4), 0 0 12px rgba(66, 133, 244, 0.2);
+}
+
+.item-openai:hover {
+  border-color: #10a37f;
+  box-shadow: 0 16px 36px rgba(16, 163, 127, 0.4), 0 0 12px rgba(16, 163, 127, 0.2);
+}
+
+.item-opencode:hover {
+  border-color: #f25f22;
+  box-shadow: 0 16px 36px rgba(242, 95, 34, 0.4), 0 0 12px rgba(242, 95, 34, 0.2);
 }
 
 @keyframes spin {

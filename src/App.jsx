@@ -50,13 +50,13 @@ function App() {
         </div>
       </header>
       <div className="main">
-        <a className="item" href="https://animas-ss.github.io/Dolce_Vita_Noelia_AG" target="_blank" rel="noopener noreferrer">
+        <a className="item item-antigravity" href="https://animas-ss.github.io/Dolce_Vita_Noelia_AG" target="_blank" rel="noopener noreferrer">
           <img src={`${import.meta.env.BASE_URL}Google.png`} alt="Antigravity Logo" className="logos antigravity-logo" />
         </a>
-        <div className="item" onClick={handleTogglePrompt}>
+        <div className="item item-openai" onClick={handleTogglePrompt}>
           <img src={openaiLogo} alt="OpenAI Logo" className="logos openai-logo" />
         </div>
-        <a className="item" href="https://animas-ss.github.io/Dolce_Vita_Noelia_OC" target="_blank" rel="noopener noreferrer">
+        <a className="item item-opencode" href="https://animas-ss.github.io/Dolce_Vita_Noelia_OC" target="_blank" rel="noopener noreferrer">
           <img src={codeLogo} alt="Code Logo" className="logos code-logo" />
         </a>
       </div>
